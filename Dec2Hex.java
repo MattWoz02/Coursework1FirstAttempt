@@ -7,7 +7,7 @@ class Dec2Hex
 
     public static void main(String args[])
     {
-	if (args.lenth == 0)
+	if (args.length == 0)
 	{
 	   System.out.println("Error: No input argument provided. Please provide a valid integer.");
 	   return;
