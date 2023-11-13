@@ -17,7 +17,7 @@ class Dec2Hex
         Arg1 = Integer.parseInt(args[0]);
 
 if (Arg1 < 0) {
-                System.out.println("Error: Negative integers are not supported. P>
+                System.out.println("Error: Negative integers are not supported."); 
                 return;
             }
 
