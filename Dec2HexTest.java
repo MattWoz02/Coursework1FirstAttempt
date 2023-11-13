@@ -3,37 +3,26 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class Dec2HexTest {
-
-    public Dec2HexTest()
-   {}
-    Dec2Hex dec2Hex;
-
-    @Before
-    public void setUp() {
-        dec2Hex = new Dec2Hex();
+    /**
+     * Method: main(String args[])
+     */
+    @Test
+    public void testWithCorrectInput() {
+        Dec2Hex.main(new String[] {"15"});
     }
 
     @Test
-    public void testConversion() {
-        String[] args = {"15"};
-        Dec2Hex.main(args);
-    }
-    
-    @Test
-    public void testNoInputArgument() {
-        String[] args = {};
-        Dec2Hex.main(args);
+    public void testNoInput() {
+        Dec2Hex.main(new String[]{});
     }
 
     @Test
-    public void testInvalidInput() {
-        String[] args = {"test"};
-        Dec2Hex.main(args);
+    public void testWithNonIntegerInput() {
+        Dec2Hex.main(new String[] {"sometext"});
     }
 
-    @Test
-    public void testNegativeInput() {
-        String[] args = {"-12"};
-        Dec2Hex.main(args);
-    }
+	@Test
+	public void testWithNegativeInput(){
+	Dec2Hex.main(new String[] {"-12"});
+}
 }
