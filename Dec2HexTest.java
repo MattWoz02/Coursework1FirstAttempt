@@ -15,7 +15,7 @@ public class Dec2HexTest {
 
     @Test
     public void testConversion() {
-        tring[] args = {"15"};
+        String[] args = {"15"};
         Dec2Hex.main(args);
     }
     
