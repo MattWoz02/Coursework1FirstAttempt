@@ -2,15 +2,15 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class Dex2HexTest {
+public class Dec2HexTest {
 
-    public Dex2HexTest()
+    public Dec2HexTest()
    {}
-    Dex2Hex dex2Hex;
+    Dec2Hex dec2Hex;
 
     @Before
     public void setUp() {
-        dex2Hex = new Dex2Hex();
+        dec2Hex = new Dec2Hex();
     }
 
     @Test
