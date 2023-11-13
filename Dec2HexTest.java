@@ -25,7 +25,7 @@ public class Dec2HexTest {
         Dec2Hex.main(args);
     }
 
-    Test
+    @Test
     public void testInvalidInput() {
         String[] args = {"test"};
         Dec2Hex.main(args);
